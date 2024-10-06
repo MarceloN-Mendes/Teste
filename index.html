@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ledger&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>El Chavo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#chaves"><img src="img/Barril.png" alt="Icone de barril" id="imgNav"></a>
+            
+        
+            <ul id="navPC">
+                <li class="Links"><a href="#chaves">Chaves</a></li>
+                <li class="Links"><a href="#bolanos">Roberto Bolaños</a></li>
+                <li class="Links"><a href="#pesquisa">Pesquisa de campo</a></li>
+                <li class="Links"><a href="#curiosidades">Curiosidades</a></li>
+                <li class="Links"><a href="#influenciaMex">México</a></li>
+                <li class="Links"><a href="#influenciaBrasil">Brasil</a></li>
+                <li class="Links"><a href="#grupo">Nós</a></li>
+            </ul>
+
+            <span class="material-symbols-outlined icons group" onclick="group()">group</span>
+            <span class="material-symbols-outlined icons menu" onclick="menu()">menu</span>
+
+
+        </nav>
+        <div class="transition" id="temp"></div>
+    </header>
+    <section id="cellMenu" class="hide">
+        <div id="boxClose">    
+            <span class="material-symbols-outlined closeMenu icons" onclick="closeIconMenu()">close</span>
+        </div>
+        <ul id="contentLinks"> 
+            <li class="LinksMenu"><a href="#chaves"           onclick="clickNav()">Chaves</a></li>
+            <li class="LinksMenu"><a href="#bolanos"          onclick="clickNav()">Roberto Bolaños</a></li>
+            <li class="LinksMenu"><a href="#pesquisa"         onclick="clickNav()">Pesquisa de campo</a></li>
+            <li class="LinksMenu"><a href="#curiosidades"     onclick="clickNav()">Curiosidades</a></li>
+            <li class="LinksMenu"><a href="#influenciaMex"    onclick="clickNav()">México</a></li>
+            <li class="LinksMenu"><a href="#influenciaBrasil" onclick="clickNav()">Brasil</a></li>
+            <li class="LinksMenu"><a href="#grupo"            onclick="clickNav()">Nós</a></li>
+        </ul>
+    </section>
+    <section id="groupCell" class="hide">
+        <div id="boxClose">    
+            <span class="material-symbols-outlined closeMenu icons" onclick="closeIconGroup()">close</span>
+        </div>
+        <h1>Grupo</h1>
+            <ul id="contentGrup">
+                <li class="nomes">Marcelo</li>
+                <li class="nomes">Mariana</li>
+                <li class="nomes">Maria Isabel</li>
+            </ul>
+            <ul id="contentGrup">
+                <li class="nomes">Giovanna</li>
+                <li class="nomes">Joyce</li>
+                <li class="nomes">Anna Beatriz</li>
+            </ul>
+    </section>
+    <section id="respostas" class="hide">
+        <div id="boxIcon">
+            <span class="material-symbols-outlined close" onclick="closeIcon()">close</span>
+        </div>        
+            <div id="resp1" class="hide">
+                <h2>Nome: Claudia</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+            </div>
+            <div id="resp2" class="hide">
+                <h2>Nome: Carolina</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+            </div>
+            <div id="resp3" class="hide">
+                <h2>Nome: Caua</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+            </div>
+            <div id="resp4" class="hide">
+                <h2>Nome: Cesar</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+            </div>
+            <div id="resp5" class="hide">
+                <h2>Nome: Claudio</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore atque possimus voluptates pariatur, laboriosam sapiente facilis quod fugiat omnis ad dolores inventore aut aliquid repellendus molestias. Unde eveniet distinctio aliquam.</p>
+            </div>
+
+    </section>
+    <main>
+        <div class="container" id="chaves">
+                <h1>Chaves</h1>
+
+                <p>
+                    A história de Chaves surgiu como um quadro do programa Chespirito.
+                    A ideia inicial era que o personagem Chaves conversasse com um vendedor de balões, 
+                    mas a mudança de emissora do ator Rubén Aguirre (Professor Girafales) levou à criação de um novo
+                    personagem. O quadro fez tanto sucesso que levou a criação de um programa próprio, chamado Chaves, 
+                    com sete temporadas de 1973 e 1980, exibida pela primeira vez em 09 de abril de 1972 no Canal 8.
+                    O programa foi vendido para toda a América Latina e dublado em mais de 50 idiomas. No Brasil,
+                    Chaves foi transmitido pelo SBT no dia 24 de agosto de 1984, dentro do programa TV Powww! ,
+                    mais tarde, pela Turner nos canais Cartoon Network. foi visto por mais de 8,3 milhões de 
+                    telespectadores a cada dia. 
+                </p>
+                <p>
+                <strong> Chaves é um seriado de humor que conta a história de um menino pobre e órfão que vive em um barril em uma vila.</strong>  É considerado um programa especial, 
+                com características próprias que abordava temas como desigualdade social, desestrutura familiar e decadência do ensino.
+                </p>
+                <p>
+                    O programa foi criado pelo ator e diretor mexicano <strong> Roberto Gómez Bolaños, </strong>
+                    que também interpretava o personagem principal. 
+
+                </p>
+        </div>
+
+        <div class="container" id="bolanos">
+        <div class="transition" id="temp"></div>
+
+        <img src="img/robertobolanoschaves.webp" alt="Roberto Bolaños" class="image">
+
+            <h1>Roberto Bolaños</h1>
+            <p>
+                Roberto Gómez Bolaños, também conhecido como Chespirito, foi o criador do seriado Chaves.
+                 Ele também foi ator, roteirista, diretor, dramaturgo, desenhista, compositor e produtor de televisão.
+                  Roberto Gómez Bolaños nasceu em 21 de fevereiro de 1929 e faleceu em 28 de novembro de 2014.
+                </p>
+
+                  <p>
+                   Sua morte foi causada por complicações relacionadas a problemas cardíacos e respiratórios. 
+                   Bolaños foi um ícone da comédia mexicana, e seu legado continua a influenciar gerações de fãs ao redor do mundo,
+                    refletindo sua habilidade única de conectar-se com o público por meio de humor e simplicidade. 
+                Não é atoa que em toda sua trajetória de vida, foi brilhante com suas ideias e projetos feitos.
+
+            </p>
+        </div>
+        <div class="transition" id="temp"></div>
+        <div class="container" id="pesquisa">
+
+            <h1>Pesquisa de Campo</h1>
+            
+            <ul id="scrollPerguntas">
+                <li><img id="people1" class="people" src="img/Perfil.jpg" alt="foto de perfil generica" onclick="people1()"></li>
+                <li><img id="people2" class="people" src="img/Perfil.jpg" alt="foto de perfil generica" onclick="people2()"></li>
+                <li><img id="people3" class="people" src="img/Perfil.jpg" alt="foto de perfil generica" onclick="people3()"></li>
+                <li><img id="people4" class="people" src="img/Perfil.jpg" alt="foto de perfil generica" onclick="people4()"></li>
+                <li><img id="people5" class="people" src="img/Perfil.jpg" alt="foto de perfil generica" onclick="people5()"></li>        
+            </ul>
+        </div>
+
+        
+
+        <div class="container" id="curiosidades">
+            <div class="transition" id="temp"></div>
+            <h1>Curiosidades</h1>
+            <div id="contBoxCurio">
+                <div class="boxCurio">    
+                    <img id="chavesfoto" src="img/ChaveSim.jpeg" alt="Movimento de afirmacao do seriado chaves">
+                    
+                    <p class="textocurios">
+                        Na história, o barril é apenas um esconderijo, e ele divide o apartamento com alguém que não apareceu em nenhum episódio (a porta do apartamento nunca chegou a aparecer também). <br>
+                        Chaves ama sanduíches de presunto, mas aparece comendo apenas duas vezes essa iguaria na série.
+                      </p>
+                </div>
+                <div class="boxCurio">
+                    <p class="textocurios">
+                        As últimas palavras ditas de Ramón Valdez (Seu Madruga) para Edgar Vivar (Sr. Barriga) foram: “Viu? Não paguei o aluguel!”. <br>
+                        Carlos Villagrán não tinha que usar nenhum tipo de enchimento nas bochechas. Ele as enchia de ar e falava ao mesmo tempo. <br>
+                        Florinda Meza, a Dona Florinda, e Roberto Bolaños, o Chaves, começaram a namorar em 1978. O casamento foi no dia 19 de novembro de 2004, após mais de 25 anos de união não oficial.
+                    </p>
+                    <p id="textocurios">
+                        Dublado em mais de 50 idiomas, Chaves foi veiculado em mais de 90 países. Na América Latina, somente Cuba deixou de exibi-lo. No Brasil,o canal SBT mostra o seriado há mais de 30 anos. <br>
+                        A personagem de Angelines Fernández, a Bruxa do 71, ganhou esse nome por ter começado a trabalhar em 1971 com Bolaños, motivo pelo qual foi escolhido o número de seu apartamento. Nascida na Espanha, atriz morreu aos 71 anos em 25 de março de 1994. <br>
+                        Em 1974, Maria Antonieta de las Nieves, atriz que deu vida à personagem Chiquinha, passou um tempo fora do programa, pois estava grávida. Para explicar o desaparecimento dela, criou-se a história de ela tinha ido morar com tias no interior. <br>
+                </div>
+            </div>
+            <div id="boxMedia">  
+                <img id="chavesfoto" src="img/ChaveSim.jpeg" alt="Movimento de afirmacao do seriado chaves">
+                    
+                <p class="textocurios">
+                    Na história, o barril é apenas um esconderijo, e ele divide o apartamento com alguém que não apareceu em nenhum episódio (a porta do apartamento nunca chegou a aparecer também). <br>
+                    Chaves ama sanduíches de presunto, mas aparece comendo apenas duas vezes essa iguaria na série.
+                </p>
+
+                <p class="textocurios">
+                    As últimas palavras ditas de Ramón Valdez (Seu Madruga) para Edgar Vivar (Sr. Barriga) foram: “Viu? Não paguei o aluguel!”. <br>
+                    Carlos Villagrán não tinha que usar nenhum tipo de enchimento nas bochechas. Ele as enchia de ar e falava ao mesmo tempo. <br>
+                    Florinda Meza, a Dona Florinda, e Roberto Bolaños, o Chaves, começaram a namorar em 1978. O casamento foi no dia 19 de novembro de 2004, após mais de 25 anos de união não oficial.
+                </p>
+                <p id="textocurios">
+                    Dublado em mais de 50 idiomas, Chaves foi veiculado em mais de 90 países. Na América Latina, somente Cuba deixou de exibi-lo. No Brasil,o canal SBT mostra o seriado há mais de 30 anos. <br>
+                    A personagem de Angelines Fernández, a Bruxa do 71, ganhou esse nome por ter começado a trabalhar em 1971 com Bolaños, motivo pelo qual foi escolhido o número de seu apartamento. Nascida na Espanha, atriz morreu aos 71 anos em 25 de março de 1994. <br>
+                    Em 1974, Maria Antonieta de las Nieves, atriz que deu vida à personagem Chiquinha, passou um tempo fora do programa, pois estava grávida. Para explicar o desaparecimento dela, criou-se a história de ela tinha ido morar com tias no interior. <br>    
+            </div>
+        </div>
+
+        
+
+        <div class="container" id="influenciaMex">
+            <div class="transition" id="temp"></div>
+            
+            <h1>Influência no México</h1>
+            <p>
+                 "Chaves" refletia a realidade de muitas famílias mexicanas que viviam em condições precárias. Os personagens representavam 
+                 figuras comuns das periferias urbanas, como o menino de rua (Chaves), o pai solteiro e desempregado (Seu Madruga), e a mãe solteira (Dona Florinda).
+                 Esses personagens permitiam que os espectadores mexicanos se identificassem com suas histórias e lutas diárias.
+            </p>
+            <br>
+            <p>
+                 Apesar do sucesso, o programa também recebeu críticas. Alguns críticos apontam que a série, embora retratasse a vida dos pobres, foi produzida por Roberto Gómez Bolaños, que pertencia à classe alta.
+                 Isso levou a uma visão romantizada da pobreza e uma falta de crítica direta às desigualdades sociais do México.
+                 Além disso, a proximidade de Bolaños com partidos políticos e sua representação de personagens femininos de maneira estereotipada também foram alvo de críticas.
+
+
+            </p>
+            <br>
+            <p>
+                Apesar das críticas, "Chaves" deixou um legado duradouro no México. A série é lembrada por sua capacidade de
+                 entreter e, ao mesmo tempo, oferecer um reflexo da sociedade mexicana. Personagens
+                 e episódios continuam a ser referenciados na cultura popular, e o programa mantém uma base de fãs leal até hoje.
+            </p>    
+        </div>
+
+        
+
+        <div class="container" id="influenciaBrasil">
+            <div class="transition" id="temp"></div>
+            <h1>Influência No Brasil</h1>
+            <p>
+                O programa chegou ao Brasil em 1984, trazido por Silvio Santos e exibido pelo SBT.
+                Apesar das baixas expectativas iniciais da equipe do SBT quanto ao sucesso do seriado, Silvio Santos acreditou no potencial de "Chaves" e estava certo.
+                O programa rapidamente se tornou um sucesso absoluto entre os telespectadores brasileiros, especialmente devido à dublagem que adaptou várias piadas e contextos culturais para o público local.
+                As expressões e os bordões dos personagens se tornaram parte do cotidiano brasileiro, como “Isso, isso, isso” e “Ninguém tem paciência comigo”.
+            </p>
+            <p>
+                "Chaves" se destacou no Brasil por sua capacidade de abordar temas universais e cativar diferentes gerações.
+                O seriado explorava questões como pobreza, solidariedade e as relações humanas de uma maneira leve e humorística, o que ressoou com a realidade de muitos brasileiros.
+                Além disso, o programa contribuiu para a popularização da cultura mexicana no Brasil, aumentando o interesse por outras produções mexicanas e fortalecendo os laços culturais entre os dois países.
+            </p>
+            <p>
+                A influência de "Chaves" no Brasil é tão grande que várias homenagens e eventos foram realizados em sua honra. 
+                Em 2014, por exemplo, quando Roberto Gómez Bolaños, criador e intérprete do Chaves, faleceu, milhares de brasileiros expressaram seu pesar e gratidão nas redes sociais e em eventos públicos.
+                A série continua a ser exibida pelo SBT, mantendo viva a memória dos personagens que marcaram a infância e a vida de muitos brasileiros.
+            </p>
+
+        </div>
+
+        
+
+
+        <div class="container" id="grupo">
+            <div class="transition" id="temp"></div>
+            <h1>Grupo</h1>
+            <ul id="contentGrup">
+                <li class="nomes">Marcelo</li>
+                <li class="nomes">Mariana</li>
+                <li class="nomes">Maria Isabel</li>
+            </ul>
+            <ul id="contentGrup">
+                <li class="nomes">Giovanna</li>
+                <li class="nomes">Joyce</li>
+                <li class="nomes">Anna Beatriz</li>
+            </ul>
+        </div>
+
+    </main>  
+    <script src="script.js"></script>
+</body>
+</html>
